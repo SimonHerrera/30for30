@@ -7,6 +7,45 @@
 </head>
 <body>
 
+<!-- practice script -->
+<script>
+  for(j = 0; j <= 20; j++) {
+    if((j % 2) ===0) {
+      continue;
+    }
+    if (j === 15) {
+      break;
+    }
+    console.log(j);
+  }
+
+  var customer = {name : "Bob", adress : "111 Drive", phone : "333-333-3333", balance : 51.50}
+
+  for (k in customer) {
+    console.log(customer[k])
+  }
+
+  var employee = ["Alex Smith", "Tech", "444-444"]
+    for(i = 0; i < employee.length; i++) {
+      console.log ("employee ", employee[i])
+    }
+
+  function inArray(arrayToCheck, value) {
+    for(i = 0; i < arrayToCheck.length; i++) {
+      if(arrayToCheck[i] === value) {
+        return "This number is in the array";
+      }
+    }
+    return false;
+  }
+
+  var randArray = [1,2,4,6,10];
+  console.log("was ", randArray)
+  console.log("This in array or arrey =", inArray(randArray, 1))
+  console.log("now is ", inArray(randArray,3))
+
+
+</script>
 
   <div class="keys">
     <!-- can use anything after "data-" so here we use key to make our own selector -->
